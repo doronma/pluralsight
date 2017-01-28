@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductFilterPipe } from './product-list/product-filter.pipe';
+import { StarComponent } from './share/star/star.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     ProductListComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    StarComponent
   ],
   imports: [
     BrowserModule,

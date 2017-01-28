@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { IProduct } from '../product/product';
+import {StarComponent} from '../share/star/star.component'
 
 @Component({
     selector: 'app-product-list',
@@ -73,6 +74,10 @@ export class ProductListComponent implements OnInit {
 
     toggleImage(): void {
         this.showImage = !this.showImage;
+    }
+
+    onRatingClicked(message: string): void{
+        this.pageTitle = 'Product List:' + message;
     }
 
 }
