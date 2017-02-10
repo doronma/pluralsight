@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit {
     listFilter: string;
     products: IProduct[];
     errorMessage: string;
-    dataOption: number = 3;
+    dataOption: number = 2;
 
     constructor(private _productService: ProductService) { }
 
